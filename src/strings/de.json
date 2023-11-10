@@ -1429,7 +1429,7 @@
     "DeleteAll": "Alle löschen",
     "EnableFallbackFontHelp": "Benutzerdefinierte, alternative Schriftarten aktivieren. Dies kann Probleme mit inkorrekt dargestellten Untertiteln vermeiden.",
     "EnableFallbackFont": "Ausweichschriftarten aktivieren",
-    "LabelFallbackFontPathHelp": "Gebe einen Verzeichnis an, das Ausweichschriftarten für das Rendern von ASS- oder SSA-Untertiteln enthält. Die maximal erlaubte Schriftartgröße beträgt 20 MB. Leichte und web-freundliche Schriftartformate wie etwa woff2 werden empfohlen.",
+    "LabelFallbackFontPathHelp": "Diese Schriftarten werden von einigen Clients zur Darstellung von Untertiteln verwendet. Weitere Informationen hierzu finden Sie in der Dokumentation.",
     "LabelFallbackFontPath": "Verzeichnis für Ausweichschriftarten",
     "HeaderSelectFallbackFontPathHelp": "Suche oder gib das Verzeichnis für Ausweichschriftarten zum Rendern von ASS/SSA Untertiteln an.",
     "HeaderSelectFallbackFontPath": "Verzeichnis für Ausweichschriftarten auswählen",
@@ -1733,7 +1733,7 @@
     "PasswordRequiredForAdmin": "Für Admin Konten wird ein Passwort benötigt.",
     "LabelEnableLUFSScan": "LUFS-Scan aktivieren",
     "LabelSyncPlayNoGroups": "Keine Gruppen verfügbar",
-    "LabelEnableLUFSScanHelp": "Clients können die Audio Wiedergabe normalisieren, um die selbe Lautstärke für mehrere Stücke zu bekommen.\nDies verlängert den Bibliotheksscan und benötigt mehr Ressourcen.",
+    "LabelEnableLUFSScanHelp": "Clients können die Audio-Wiedergabe normalisieren, um die selbe Lautstärke für mehrere Stücke zu bekommen. Dies verlängert den Bibliotheks-Scan und benötigt mehr Ressourcen.",
     "Notifications": "Benachrichtigungen",
     "NotificationsMovedMessage": "Die Benachrichtigungsfunktion wurde zum Webhook Plugin verschoben.",
     "EnableAudioNormalizationHelp": "Die Audionormalisierung fügt eine konstante Verstärkung hinzu, um den Durchschnitt auf einem gewünschten Pegel zu halten (-18 dB).",
@@ -1776,5 +1776,10 @@
     "ForeignPartsOnly": "Erzwungen/Nur ausländische Teile",
     "HearingImpairedShort": "BaFa/SDH",
     "HeaderGuestCast": "Gast Stars",
-    "LabelBackdropScreensaverIntervalHelp": "Die Zeit in Sekunden zwischen dem Wechsel verschiedener Hintergrundbilder im Bildschirmschoner."
+    "LabelBackdropScreensaverIntervalHelp": "Die Zeit in Sekunden zwischen dem Wechsel verschiedener Hintergrundbilder im Bildschirmschoner.",
+    "SearchResultsEmpty": "Entschuldigung! Es konnten keine Ergebnisse für „{0}“ gefunden werden",
+    "LabelTrackGain": "Titel Gain",
+    "SelectAudioNormalizationHelp": "Track Gain - passt die Lautstärke der einzelnen Tracks an, so dass sie mit der gleichen Lautstärke wiedergegeben werden. Albumverstärkung - passt die Lautstärke aller Titel eines Albums an, wobei der Dynamikbereich des Albums erhalten bleibt.",
+    "LabelAlbumGain": "Albumlautstärke",
+    "LabelSelectAudioNormalization": "Audio Normalisierung"
 }

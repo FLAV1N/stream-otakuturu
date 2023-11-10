@@ -1374,8 +1374,8 @@ function renderChildren(page, item) {
                     items: result.Items,
                     showIndexNumber: false,
                     enableOverview: true,
-                    enablePlayedButton: layoutManager.mobile ? false : true,
-                    infoButton: layoutManager.mobile ? false : true,
+                    enablePlayedButton: !layoutManager.mobile,
+                    infoButton: !layoutManager.mobile,
                     imageSize: 'large',
                     enableSideMediaInfo: false,
                     highlight: false,
@@ -1966,13 +1966,15 @@ export default function (view, params) {
             selectedItem = item;
 
             apiClient.getCurrentUser().then(function (user) {
-                itemContextMenu.show(getContextMenuOptions(selectedItem, user, button)).then(function (result) {
-                    if (result.deleted) {
-                        appRouter.goHome();
-                    } else if (result.updated) {
-                        reload(self, view, params);
-                    }
-                });
+                itemContextMenu.show(getContextMenuOptions(selectedItem, user, button))
+                    .then(function (result) {
+                        if (result.deleted) {
+                            appRouter.goHome();
+                        } else if (result.updated) {
+                            reload(self, view, params);
+                        }
+                    })
+                    .catch(() => { /* no-op */ });
             });
         });
     }
